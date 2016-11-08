@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.egco28.a13262.NewCookies">
+
+    <TextView
+        android:id="@+id/newCookieTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/border"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="New Cookies"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#e91e63" />
+
+    <ImageView
+        android:id="@+id/cookieResImg"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+
+        android:background="@drawable/border"
+        android:padding="5dp"
+        android:src="@drawable/closed_cookie" />
+
+    <TextView
+        android:id="@+id/resultLabel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/border2"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Result"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/border"
+        android:gravity="center_vertical"
+        android:paddingLeft="40dp"
+        android:text="Result : No Result"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#e91e63"
+        android:textIsSelectable="false"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:background="#E0E0E0"
+        android:gravity="center_vertical|right"
+        android:paddingEnd="30dp"
+        android:paddingLeft="40dp"
+        android:text="Date : "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:textIsSelectable="false"
+        android:textSize="16dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- How to add FAB ???
+        1.add " compile 'com.android.support:design:23.4.0' " in to gradle(app)
+        2.go to design page(opposite text page)
+        3.click at CustomView and then choose FloatingActionButton
+        4.drag/put FAB that you hold in the area that you want
+        -->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_weight="0.64"
+            android:src="@android:color/transparent"
+            app:backgroundTint="#F06292"
+            app:elevation="0dp" />
+
+        <TextView
+            android:id="@+id/shakeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="16dp"
+            android:text="Shake"
+            android:textColor="@android:color/white"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    </FrameLayout>
+
+    <!--<FrameLayout-->
+    <!--android:layout_width="120dp"-->
+    <!--android:layout_height="120dp"-->
+    <!--android:layout_gravity="center">-->
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:src="@android:color/transparent"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:adjustViewBounds="false"-->
+    <!--app:elevation="0dp"-->
+    <!--android:id="@+id/FAB" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:text="Shake"-->
+    <!--android:elevation="16dp"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+    <!--android:id="@+id/textBtn" />-->
+    <!--</FrameLayout>-->
+</LinearLayout>
